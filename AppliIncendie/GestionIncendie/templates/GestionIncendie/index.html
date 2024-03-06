@@ -1,0 +1,21 @@
+{% extends 'GestionIncendie/base.html' %}
+
+{% block content %}
+    <main>
+        <section id="content">
+            <div id="map"></div>
+            <div id="details">
+                <div class="indication">
+                    <h1 id="indice">Cliquer pour voir les détails</h1>
+                </div>
+                <div id="details_objet">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script id="data" dp="{{ directionsP }}" ccdrf="{{ ccdrf }}" sf="{{ secteursF }}"
+            pe="{{ pointsEaux }}" pv="{{postesVigies}}" tpf="{{ tranchePF }}"></script>
+{% endblock %}
